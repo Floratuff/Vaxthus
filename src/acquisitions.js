@@ -1,5 +1,7 @@
 import Chart from 'chart.js/auto'
 
+var tempChart;
+
 (async function() {
   const data = [
     { year: 2010, count: 10 },
@@ -11,10 +13,10 @@ import Chart from 'chart.js/auto'
     { year: 2016, count: 28 },
   ];
 
-  new Chart(
+  tempChart = new Chart(
     document.getElementById('acquisitions'),
     {
-      type: 'bar',
+      type: 'line',
       data: {
         labels: data.map(row => row.year),
         datasets: [
@@ -27,3 +29,26 @@ import Chart from 'chart.js/auto'
     }
   );
 })();
+
+function addData(chart, label, newData) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(newData);
+    });
+    chart.update();
+}
+
+function removeData(chart) {
+    chart.data.labels.shift();
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.shift();
+    });
+    chart.update();
+}
+
+
+setInterval(() => {
+    console.log("fddf");
+    removeData(tempChart);
+    addData(tempChart, "", 20);
+}, 4000);

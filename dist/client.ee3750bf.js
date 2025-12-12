@@ -717,6 +717,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _auto = require("chart.js/auto");
 var _autoDefault = parcelHelpers.interopDefault(_auto);
+var tempChart;
 (async function() {
     const data = [
         {
@@ -748,8 +749,8 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             count: 28
         }
     ];
-    new (0, _autoDefault.default)(document.getElementById('acquisitions'), {
-        type: 'bar',
+    tempChart = new (0, _autoDefault.default)(document.getElementById('acquisitions'), {
+        type: 'line',
         data: {
             labels: data.map((row)=>row.year),
             datasets: [
@@ -761,6 +762,25 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
         }
     });
 })();
+function addData(chart, label, newData) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset)=>{
+        dataset.data.push(newData);
+    });
+    chart.update();
+}
+function removeData(chart) {
+    chart.data.labels.shift();
+    chart.data.datasets.forEach((dataset)=>{
+        dataset.data.shift();
+    });
+    chart.update();
+}
+setInterval(()=>{
+    console.log("fddf");
+    removeData(tempChart);
+    addData(tempChart, "", 20);
+}, 4000);
 
 },{"chart.js/auto":"a3bOj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"a3bOj":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

@@ -50,5 +50,6 @@ function removeData(chart) {
 setInterval(() => {
     console.log("fddf");
     removeData(tempChart);
-    addData(tempChart, "", 20);
+    addData(tempChart, "", myArray[1]);
+    console.log(myArray[1]);
 }, 4000);

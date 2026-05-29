@@ -2,7 +2,7 @@
 95C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\array\virtual\every.js134094079083457502 0
 100C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\typed-array\from-async.js134094079093767367 0
 109C:\wamp64\www\webbserver_programering\client\node_modules\@swc\helpers\cjs\_iterable_to_array_limit_loose.cjs134094079010001367 0
-49C:\wamp64\www\webbserver_programering\client\dist134100121039817196 1
+49C:\wamp64\www\webbserver_programering\client\dist134103631235319337 1
 77C:\wamp64\www\webbserver_programering\client\node_modules\ramda\src\ifElse.js134094079059005912 0
 89C:\wamp64\www\webbserver_programering\client\node_modules\caniuse-lite\data\regions\KN.js134094079034282721 0
 93C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\instance\flat-map.js134094079090779822 0
@@ -87,12 +87,12 @@
 117C:\wamp64\www\webbserver_programering\client\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.napi.node134094078997036162 0
 82C:\wamp64\www\webbserver_programering\client\node_modules\semver\classes\semver.js134094079008024042 0
 88C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\symbol\split.js134094079138430284 0
-64C:\wamp64\www\webbserver_programering\client\src\acquisitions.js134094098317436773 0
+64C:\wamp64\www\webbserver_programering\client\src\acquisitions.js134103635551842539 0
 105C:\wamp64\www\webbserver_programering\client\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\lmdb.h134094079015710886 0
 83C:\wamp64\www\webbserver_programering\client\node_modules\dayjs\esm\plugin\calendar134094079061860525 1
 80C:\wamp64\www\webbserver_programering\client\node_modules\whatwg-url\LICENSE.txt134094079033340591 0
 98C:\wamp64\www\webbserver_programering\client\node_modules\core-js\full\array\virtual\find-index.js134094079086075605 0
-59C:\wamp64\www\webbserver_programering\client\src\index.html134100122182365552 0
+59C:\wamp64\www\webbserver_programering\client\src\index.html134103624056921144 0
 91C:\wamp64\www\webbserver_programering\client\node_modules\@parcel\graph\test\BitSet.test.js134094079012804277 0
 78C:\wamp64\www\webbserver_programering\client\node_modules\ramda\es\sequence.js134094079065400691 0
 91C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\string\includes.js134094079102271652 0
@@ -4151,7 +4151,7 @@
 92C:\wamp64\www\webbserver_programering\client\node_modules\core-js\actual\typed-array\fill.js134094079083944160 0
 85C:\wamp64\www\webbserver_programering\client\node_modules\@parcel\graph\src\BitSet.js134094079012652976 0
 74C:\wamp64\www\webbserver_programering\client\node_modules\core-js\es\error134094079151879234 1
-68C:\wamp64\www\webbserver_programering\client\dist\client.ee3750bf.js134094098318625377 0
+68C:\wamp64\www\webbserver_programering\client\dist\client.ee3750bf.js134103631235168375 0
 79C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\string134094079155866846 1
 92C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\structured-clone.js134094079140405318 0
 92C:\wamp64\www\webbserver_programering\client\node_modules\core-js\stable\suppressed-error.js134094079141720348 0
@@ -6428,7 +6428,7 @@
 88C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\math\trunc.js134094079155866846 0
 92C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\map\delete-all.js134094079063428518 0
 87C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\map\every.js134094079083172721 0
-72C:\wamp64\www\webbserver_programering\client\dist\client.ee3750bf.js.map134094098318750791 0
+72C:\wamp64\www\webbserver_programering\client\dist\client.ee3750bf.js.map134103631235295890 0
 101C:\wamp64\www\webbserver_programering\client\node_modules\@parcel\compressor-raw\src\RawCompressor.js134094079031784920 0
 88C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\map\filter.js134094079085261818 0
 86C:\wamp64\www\webbserver_programering\client\node_modules\core-js\features\map\find.js134094079089137109 0
@@ -9112,4 +9112,4 @@
 67C:\wamp64\www\webbserver_programering\client\node_modules\.bin\uuid134094079166939608 0
 71C:\wamp64\www\webbserver_programering\client\node_modules\.bin\uuid.cmd134094079166939608 0
 71C:\wamp64\www\webbserver_programering\client\node_modules\.bin\uuid.ps1134094079167014836 0
-60C:\wamp64\www\webbserver_programering\client\dist\index.html134100113424814234 0
+60C:\wamp64\www\webbserver_programering\client\dist\index.html134103631234633703 0

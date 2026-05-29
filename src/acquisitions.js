@@ -13,23 +13,33 @@ var tempChart;
     { year: 2016, count: 28 },
   ];
 
-  tempChart = new Chart(
-    document.getElementById('acquisitions'),
-    {
-      type: 'line',
-      data: {
-        labels: data.map(row => row.year),
-        datasets: [
-          {
-            label: 'Acquisitions by year',
-            data: data.map(row => row.count)
+  var tempChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      datasets: [{
+        data: [6000, 5000, 8000, 2000, 10000, 3500, 6000, 2000, 4000, 6000]
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            autoSkip: false,
+            min: 15,
+            max: 40
+          },
+          afterBuildTicks: function(scale) {
+            scale.ticks = ticks;
+            return;
+          },
+          beforeUpdate: function(oScale) {
+            return;
           }
-        ]
+        }]
       }
     }
-  );
-})();
-
+  });
 function addData(chart, label, newData) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
@@ -52,4 +62,5 @@ setInterval(() => {
     removeData(tempChart);
     addData(tempChart, "", myArray[1]);
     console.log(myArray[1]);
-}, 4000);
+}, 4000);}
+)

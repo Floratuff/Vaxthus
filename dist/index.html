@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Chart.js example</title>
+  </head>
+  <body>
+    <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+    <div style="width: 800px"><canvas id="acquisitions"></canvas></div>
+
+    <!-- <script type="module" src="dimensions.js"></script> -->
+    <script type="module" src="/client.a9c79a3d.js"></script>
+
+
+<input type="text" name="message" id="message">
+<input type="submit" name="send" id="button">
+
+
+<div id="textbox"> 
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/client.15f56707.js"></script>
+<script>const url = "ws://192.168.30.116:8080";
+connect(url, "controller");
+function tempReceive(information, content) {
+    console.log("message!");
+    console.log(content);
+    //myArray = e.data.split("|");
+    $("#textbox").append("<div>" + content + "</div>");
+}
+onServerConnect = ()=>{
+    console.log("Connected!");
+    // Denna funktion kommer att köras när du har anslutit till servern.
+    startReceivingFromTunnel("temp", tempReceive);
+};
+onServerDisconnect = ()=>{
+// Denna funktion kommer att köras när du tappar anslutning till servern.
+};
+let myArray = [];
+$(document).on("click", "#button", function() {
+    conn.send($("#message").val());
+});
+
+</script>
+
+
+
+  
+
+</body></html>
